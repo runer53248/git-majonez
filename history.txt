@@ -1,0 +1,33 @@
+ 1826  mkdir git-majonez
+ 1827  cd git-majonez/
+ 1828  git init
+ 1829  touch main.cpp
+ 1830  vim main.cpp 
+ 1831  git add main.cpp 
+ 1832  git commit -m"Initial commit"
+ 1833  vim main.cpp 
+ 1834  git add main.cpp 
+ 1835  git commit -m"Farewell changed"
+ 1836  git remote add origin https://github.com/runer53248/git-majonez.git
+ 1837  git push -u origin master
+ 1838  git branch cs
+ 1839  git reset --hard
+ 1840  git checkout cs
+ 1841  git log --oneline --graph
+ 1842  git reset --hard HEAD^
+ 1843  git log --oneline --graph
+ 1844  vim main.cpp 
+ 1845  git add main.cpp 
+ 1846  git commit -m"Greetings"
+ 1847  git push origin cs
+ 1848  git checkout master
+ 1849  git log --oneline --graph
+ 1850  git merge cs
+ 1851  git status
+ 1852  vim main.cpp 
+ 1853  git status
+ 1854  git add main.cpp 
+ 1855  git status
+ 1856  git commit
+ 1857  history
+ 1858  history | tail -n33 >> history.txt
